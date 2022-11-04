@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+.content .textBox h2 {
+  color: #333;
+  font-size: 2.8em;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+.content .textBox h2 span {
+  color: #c5002e;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.content .textBox p {
+  color: #333;
+}
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #c5002e;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.content .imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+.content .imgBox img {
+  max-width: 340px;
+  max-height: 340px;
+}
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: -25px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+.thumb li img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.thumb li a {
+  display: inline-block;
+  margin-left: -12px;
+  padding: 5px 15px;
+  background: #c5002e;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 10px;
+}
+.sosmedIcon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #c5002e;
+}
+.sosmedIcon li {
+  list-style: none;
+}
+.sosmedIcon li a {
+  display: inline-block;
+  margin: 5px 4px;
+  transform: scale(0.6);
+  filter: invert(1);
+}
+.whatsapp-button {
+  position: absolute;
+  top: 80%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.whatsapp-button a {
+  display: inline-block;
+  transform: scale(0.1);
+}
+
+.sectionImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.sectionImage .img-slider {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 10px;
+  background: #fff;
+}
+.sectionImage .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+.sectionImage .img-slider .slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+.sectionImage .img-slider .slide img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+.sectionImage .img-slider .slide .info {
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+.sectionImage .img-slider .slide .info h2 {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  width: 80%;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.sectionImage .img-slider .slide .info p {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 10px;
+}
+.sectionImage .img-slider .slide .paraOne p {
+  width: 45%;
+  margin: 170px 0;
+  float: right;
+  text-align: right;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+}
+.sectionImage .img-slider .slide .paraTwo p {
+  width: 45%;
+  margin: 200px 0;
+  float: left;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.sectionImage .img-slider .slide .paraThree p {
+  width: 60%;
+  margin: 20px 0;
+  float: right;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.sectionImage .img-slider .slide .paraFour p {
+  width: 60%;
+  margin: 160px 0;
+  float: right;
+  text-align: right;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+}
+.sectionImage .img-slider .slide .paraFive p {
+  width: 65%;
+  margin: 250px 0;
+  float: right;
+  text-align: right;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+}
+.sectionImage .img-slider .navigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sectionImage .img-slider .navigation .btn {
+  background: rgba(0, 0, 0, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sectionImage .img-slider .navigation .btn.active {
+  background: #c5002e;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.copyrightText {
+  width: 100%;
+  background: #fff;
+  padding: 30px 10px 15px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+  header .logo {
+    max-width: 60px;
+  }
+  header ul {
+    display: none;
+  }
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(./img/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 11;
+  }
+  .toggle.active {
+    position: fixed;
+    right: 20px;
+    background: url(./img/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 10;
+  }
+  header ul li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+  section {
+    padding: 20px 20px 120px;
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .content .textBox h2 {
+    font-size: 1.7em;
+  }
+  .content .textBox h2 span {
+    color: #c5002e;
+    font-size: 0.9em;
+    font-weight: 800;
+  }
+  .content .textBox {
+    max-width: 100%;
+  }
+  .content .imgBox {
+    max-width: 100%;
+    justify-content: center;
+  }
+  .content .imgBox img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .thumb li {
+    margin: 0 8px;
+  }
+  .thumb li img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .thumb li a {
+    display: inline-block;
+    margin-left: -7px;
+    padding: 5px 5px;
+    background: #c5002e;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 8px;
+  }
+  .sosmedIcon {
+    background: #c5002e;
+    right: 0;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .whatsapp-button {
+    top: 70%;
+    right: 10px;
+    width: 50px;
+  }
+  .sectionImage .img-slider {
+    width: 400px;
+    height: 250px;
+  }
+  .img-slider .slide .info {
+    padding: 10px 20px;
+  }
+  .sectionImage .img-slider .slide .info h2 {
+    width: 80%;
+    font-size: 18px;
+  }
+  .sectionImage .img-slider .slide .info p {
+    width: 80%;
+    font-size: 13px;
+  }
+  .sectionImage .img-slider .slide .paraOne p {
+    width: 50%;
+    margin: 10px 0;
+    float: right;
+    text-align: right;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+  }
+  .sectionImage .img-slider .slide .paraTwo p {
+    width: 45%;
+    margin: 50px 0;
+    float: left;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .sectionImage .img-slider .slide .paraThree p {
+    width: 80%;
+    margin: 3px 0;
+    float: right;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .sectionImage .img-slider .slide .paraFour p {
+    width: 60%;
+    margin: 50px 0;
+    float: right;
+    text-align: right;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+  }
+  .sectionImage .img-slider .slide .paraFive p {
+    width: 55%;
+    margin: 100px 0;
+    float: left;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .sectionImage .img-slider .navigation {
+    bottom: -30px;
+  }
+  .sectionImage .img-slider .navigation .btn {
+    width: 8px;
+    height: 8px;
+    margin: 6px;
+  }
+  .copyrightText {
+    padding: 30px 40px 10px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baca Buku Book Store</title>
+    <link rel="stylesheet" href="./css/frontend.css">
+
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#content"><img src="./images/bacabuku-logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#content">Home</a></li>
+                <li><a href="https://wasap.my/60132349717/question-about-baca-buku-book-store/" target="_blank">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content" id="content">
+            <div class="textBox">
+                <h2>Koleksi Ilmuan Ulung <span> <br>Prof. Dr. Hamka</span> <br>Malar Segar Nusantara</h2>
+                <p>Karya-karya yang akan menyentuh hati dan bakal menguji aras fikiran tanpa meninggalkan kita sendirian dalam menelusuri ranjau kehidupan yang  digambarkan seperti sebuah lautan luas yang memungkinkan kita lemas di permukaan, sebaliknya mengajar kita untuk terus berenang jauh ke dalamnya, cekal menerokai setiap keindahan yang dianugerahkan.</p>
+                <a href="#sectionImage">More Info</a>
+                <a href="./products.php">Books Collection</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/101-Sungai-Nil.png" class="productList">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/101-Sungai-Nil.png" onclick="imgSelect('./images/101-Sungai-Nil.png');"><br><a href="./products.php">BuyNow</a></li>
+            <li><img src="./images/102-Bohong-di-Dunia.png" onclick="imgSelect('./images/102-Bohong-di-Dunia.png');"><br><a href="./products.php">BuyNow</a></li>
+            <li><img src="./images/103-margarett.png" onclick="imgSelect('./images/103-margarett.png');"><br><a href="./products.php">BuyNow</a></li>
+            <li><img src="./images/104-Berbicara-Tentang-Perempuan.png" onclick="imgSelect('./images/104-Berbicara-Tentang-Perempuan.png');"><br><a href="./products.php">BuyNow</a></li>
+            <li><img src="./images/105-Si-Sabariah.png" onclick="imgSelect('./images/105-Si-Sabariah.png');"><br><a href="./products.php">BuyNow</a></li>
+        </ul>
+
+        <ul class="sosmedIcon">
+            <li><a href="#" target="_blank"><img src="./images/instagrampng-4040.png"></a></li>
+            <li><a href="#" target="_blank"><img src="./images/fbpng-4040.png"></a></li>
+            <li><a href="#" target="_blank"><img src="./images/tik-tok-png-4040.png"></a></li>
+        </ul>
+
+        <div class="whatsapp-button">
+            <a href="https://wasap.my/60132349717/question-about-baca-buku-book-store/" target="_blank"><img src="./images/whatsapp.png"></a>
+        </div>
+
+    </section>
+    
+    <div class="sectionImage" id="sectionImage">
+
+        <div class="img-slider">
+
+            <div class="slide active">
+                <img src="./images/1-Buya-Hamka.png" alt="">
+                <div class="info paraOne">
+                    <p>Salah satu pengkerdilan terkejam dalam hidup, adalah membiarkan fikiran yang cemerlang menjadi budak bagi tubuh yang malas, yang mendahulukan istirehat sebelum lelah.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="./images/2-Buya-Hamka.png" alt="">
+                <div class="info paraTwo">
+                    <p>Satu hati lebih mahal dari pada senyuman. Satu jiwa lebih berharga daripada sebentuk cincin.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="./images/3-buya-hamka-isteri.png" alt="">
+                <div class="info paraThree">
+                    <p>Cinta itu adalah perasaan yang mesti ada pada tiap-tiap diri manusia, ia laksana setetes embun yang turun dari langit, bersih dan suci.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="./images/4-Buya-Hamka.png" alt="">
+                <div class="info paraFour">
+                    <p>Kecantikan yang abadi terletak pada keelokan adab dan ketinggian ilmu seseorang. Bukan terletak pada wajah dan pakaiannya.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="./images/5-hamka.png" alt="">
+                <div class="info paraFive">
+                    <p>Perjalanan terakhir Buya Hamka</p>
+                </div>
+            </div>
+ 
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="copyrightText">
+        <p>Copyright &copy; 2022 baca buku book store. All rights reserved.</p>
+    </div>
+
+    <script type="text/javascript" src="./js/frontend.js"></script>
+
+</body>
+</html>
