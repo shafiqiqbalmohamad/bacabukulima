@@ -1,6 +1,6 @@
 <?php
 
-require_once 'checkout.php';
+// require_once 'checkout.php';
 
 $productName = $total_product;
 $productPrice = $price_total;
